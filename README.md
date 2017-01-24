@@ -7,7 +7,7 @@ The container is called **container** and it is a class. The **container** shoul
 This is how the html code for the **container** looks like :
 
 ```html
-<div className='container'>
+<div class='container'>
 ...
 </div>
 ```
@@ -15,14 +15,14 @@ This is how the html code for the **container** looks like :
 Full row will take 100% of the container.
 This is how the html code for the **row** looks like :
 ```html
-<div className='row'>
+<div class='row'>
 ..
 </div>
 ```
 **Full row all together**
 ```html
-<div className='container'>
-    <div className='row'>
+<div class='container'>
+    <div class='row'>
     ...
     </div>
 </div>
@@ -37,12 +37,12 @@ if you have 4 blocks in a row they will be 25% each
 
 and so on, you get the point.
 ```html
-<div className='container'>
-    <div className='row'>
-        <div className='block'>
+<div class='container'>
+    <div class='row'>
+        <div class='block'>
         ...
         </div>
-        <div className='block'>
+        <div class='block'>
         ...
         </div>
     </div>
@@ -54,19 +54,19 @@ and so on, you get the point.
 If you want to nest the blocks you can do so by doing like this (you can nest unlimited times):
 
 ```html
-<div className='container'>
-    <div className='row'>
-        <div className='block'>
-            <div className='row'>
-                <div className='block'>
+<div class='container'>
+    <div class='row'>
+        <div class='block'>
+            <div class='row'>
+                <div class='block'>
                 ...
                 </div>
-                <div className='block'>
+                <div class='block'>
                 ...
                 </div>
             </div>
         </div>
-        <div className='block'>
+        <div class='block'>
         ...
         </div>
     </div>
@@ -80,16 +80,16 @@ The only thing that you need to do is add a class to the blocks that you want to
 
 So if we would make the navigation and the content blocks we will do it like this :
 ```html
-        <div className='container'>
-          <div className='row'>
-            <div className='block'>
-              <div className='border'>
-                <div className='content'>
-                  <div className='row'>
-                    <div className='block _25'>
+        <div class='container'>
+          <div class='row'>
+            <div class='block'>
+              <div class='border'>
+                <div class='content'>
+                  <div class='row'>
+                    <div class='block _25'>
                       Navigation
                     </div>
-                    <div className='block _75'>
+                    <div class='block _75'>
                       Content
                     </div>
                   </div>
@@ -137,11 +137,11 @@ Don't ever add class to the container,row or block. Since we are using a styling
 This is how it will look on a **block** :
 
 ```html
-        <div className='container'>
-          <div className='row'>
-            <div className='block'>
-              <div className='border'>
-                  <div className='content'>
+        <div class='container'>
+          <div class='row'>
+            <div class='block'>
+              <div class='border'>
+                  <div class='content'>
                     100% full block
                   </div>
               </div>
@@ -152,18 +152,18 @@ This is how it will look on a **block** :
 And this is how it will look with **2 blocks** :
 
 ```html
-        <div className='container'>
-          <div className='row'>
-            <div className='block'>
-              <div className='border'>
-                  <div className='content'>
+        <div class='container'>
+          <div class='row'>
+            <div class='block'>
+              <div class='border'>
+                  <div class='content'>
                     100% full block
                   </div>
               </div>
             </div>
-            <div className='block'>
-              <div className='border'>
-                  <div className='content'>
+            <div class='block'>
+              <div class='border'>
+                  <div class='content'>
                     100% full block
                   </div>
               </div>
